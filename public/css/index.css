@@ -1,0 +1,223 @@
+@font-face{
+    font-family: myfont;
+    src: url(../font/myfont.ttf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body,html{
+    width: 100%;
+    overflow: clip;
+}
+.page{
+    background-image: url(../img/bg.png);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-position: center center;
+}
+
+.l-stars > *{
+position: absolute;
+}
+
+.big-star{
+    width: .7rem;
+    height: .7rem;
+    background-color: rgb(246, 245, 245);
+    border-radius: 50%;
+}
+
+.text h1{
+    font-family:myfont;
+    color: rgb(245, 245, 245);
+    -webkit-text-stroke: 1.3px black;
+    /* text-shadow: 0px 0px 1px solid black; */
+    font-size: 4rem ;
+    transform: scale(0);
+}
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    position: relative;
+    top: 35vh;
+    flex-direction: column;
+    
+
+}
+
+.text{
+    display: flex;
+    position: relative;
+    /* margin: 0 auto; */
+    left: 2.2vw;
+}
+
+.text :nth-child(2){
+    position: relative;
+    right: 1.05rem;
+    bottom: .6rem;
+    width: 7rem;
+    height:7rem;
+    transform: rotate(-20deg);
+   
+}
+.text :nth-child(3){
+    position: relative;
+    right: 2.7rem;
+}
+
+.text h1{
+    font-size: 4.3rem;
+}
+
+.input{
+    gap: .5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom:3vh;
+}
+
+.input input{
+    background-color: transparent;
+    border-radius: 8vw;
+    border: 2px solid white;
+    width:27rem;
+    height: 2.5rem;
+}
+
+.input div{
+    background-color: white;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.input img{
+    width: 1.1rem;
+    height:1.1rem;
+    /* position: center center;    */
+    /* background-color: ; */
+}
+.input input{
+    font-family: myfont;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size:1.1rem ;
+    color: white;
+    font-size: 1.4rem;
+    -webkit-text-stroke: .5px black;
+}
+.input input:focus{
+    outline: none;
+    background-color: rgba(240, 248, 255, 0.16);
+}
+.input input::placeholder{
+    color: white;
+}
+
+
+
+.twitter{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: .5rem;
+    left: .5rem;
+
+}
+.twitter img{
+    width: 2.1rem;
+    height:2.1rem;
+}
+
+.discord{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: .5rem;
+    right: .5rem;
+}
+.discord img{
+    width: 2.1rem;
+    height:2.1rem;
+}
+@media (max-width:640px){
+.text h1{
+    font-size: 3.2rem;
+}
+
+.input input{
+    width: 70vw;
+}
+.text :nth-child(2){
+    height: 6rem;
+    width: 6rem;
+}
+.big-star{
+    width: .5rem;
+    height: .5rem;
+}
+
+}
+@media (max-width:380px){
+    .text{
+        left: 6vw;
+    }
+    .text h1{
+        font-size: 2.9rem;
+    }
+    .text :nth-child(2){
+        height: 5.1rem;
+        width: 5.1rem;
+    }
+ .input input{
+    width: 65vw;
+ }
+ .discord, .twitter{
+    width: 3rem;
+    height: 3rem;
+    }
+}
+@media (max-width:296px){
+    .text h1{
+        font-size:2.6rem;
+    }
+    .text{
+        left: 8vw;
+    }
+    .input{
+        bottom: 5vh;
+    }
+    .input input{
+        font-size: 1.1rem;
+    }
+}
+
+
