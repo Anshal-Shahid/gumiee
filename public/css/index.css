@@ -102,11 +102,12 @@ position: absolute;
     width:27rem;
     height: 2.5rem;
 }
-.input input ::-webkit-input-placeholder {
+.input input::-webkit-input-placeholder {
     user-select: none;
-} :-moz-placeholder {
-user-select: none;
 }
+.input input:-moz-placeholder {
+    user-select: none;
+    }
 
 .input div{
     background-color: white;
@@ -141,11 +142,11 @@ user-select: none;
 .input input::placeholder{
     color: white;
 }
-.input input:focus{
-    color: rgb(156, 40, 40);
+.input #search:focus{
+    background-color: white;
 }
-.input input:active{
-    color: rgb(156, 40, 40);
+.input #search:active{
+    background-color: white;
 }
 
 #search:hover{
