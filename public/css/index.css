@@ -144,9 +144,11 @@ position: absolute;
 }
 .input #search:focus{
     background-color: white;
+    opacity: 1;
 }
 .input #search:active{
     background-color: white;
+    opacity: 1;
 }
 
 #search:hover{
