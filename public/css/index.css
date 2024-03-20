@@ -102,6 +102,11 @@ position: absolute;
     width:27rem;
     height: 2.5rem;
 }
+.input input ::-webkit-input-placeholder {
+    user-select: none;
+} :-moz-placeholder {
+user-select: none;
+}
 
 .input div{
     background-color: white;
@@ -136,7 +141,17 @@ position: absolute;
 .input input::placeholder{
     color: white;
 }
+.input input:focus{
+    color: rgb(156, 40, 40);
+}
+.input input:active{
+    color: rgb(156, 40, 40);
+}
 
+#search:hover{
+  opacity: .8;
+  cursor: pointer;
+}
 
 
 .twitter{
@@ -302,6 +317,7 @@ position: absolute;
     z-index: 999;
     width: 80%;
     border: 3px solid white;
+
 }
 
 .popup-content {
