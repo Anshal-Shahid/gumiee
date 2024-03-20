@@ -2,6 +2,11 @@ const input = document.querySelector("input")
 const btn=document.querySelector("#search")
 const answer=document.querySelector("#result")
 
+
+window.addEventListener("load",()=>{
+  window.alert("This website is currently in development and is not yet finalized.")
+})
+
 btn.addEventListener(  "click",async ()=>{
     let result=await fetch('/walletchecker', {
         method: 'POST',
