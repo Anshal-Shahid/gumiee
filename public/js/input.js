@@ -3,9 +3,7 @@ const btn=document.querySelector("#search")
 const answer=document.querySelector("#result")
 
 
-window.addEventListener("load",()=>{
-  window.alert("This website is currently in development and is not yet finalized.")
-})
+
 
 btn.addEventListener(  "click",async ()=>{
     let result=await fetch('/walletchecker', {
@@ -24,11 +22,11 @@ btn.addEventListener(  "click",async ()=>{
 
       if(data.response){
         console.log("good");
-        answer.innerHTML="You are on the wallet list"
+        answer.innerHTML="You are on the whitelist"
      }
       else{
         console.log("bad");
-        answer.innerHTML="You are not on the wallet list"
+        answer.innerHTML="You are not on the whitelist"
 
       }
 
@@ -37,4 +35,12 @@ btn.addEventListener(  "click",async ()=>{
 
 
 
+window.addEventListener("load", function() {
+  
+  document.getElementById('popup-box').style.display = 'block';
+});
 
+function closePopup() {
+  
+  document.getElementById('popup-box').style.display = 'none';
+}
