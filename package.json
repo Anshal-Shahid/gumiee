@@ -1,22 +1,33 @@
 {
   "dependencies": {
+    "async_hooks": "^1.0.0",
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "csv-parser": "^3.0.0",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
-    "mongoose": "^8.2.2"
+    "mongoose": "^8.2.2",
+    "path-browserify": "^1.0.1",
+    "stream-browserify": "^3.0.0"
   },
   "name": "jellienz",
   "version": "1.0.0",
   "description": "...",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./src/index.js",
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "bundle": "nodemon ./configs/dist/bundle.js"
   },
   "author": "jellienz",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "ejs-loader": "^0.5.0",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
+  }
 }
